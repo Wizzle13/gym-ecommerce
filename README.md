@@ -13,4 +13,4 @@ gym e-commerce
 
 * Vue Lee
 
-Oscar Hurtado
+* Oscar Hurtado
