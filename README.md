@@ -11,6 +11,6 @@ gym e-commerce
 
 * Derek Madderom
 
-Vue Lee
+* Vue Lee
 
 Oscar Hurtado
