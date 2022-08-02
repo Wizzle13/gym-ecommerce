@@ -9,7 +9,7 @@ Cameron Cole
 
 * Chris Burton
 
-Derek Madderom
+* Derek Madderom
 
 Vue Lee
 
