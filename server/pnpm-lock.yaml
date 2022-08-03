@@ -4,6 +4,7 @@ specifiers:
   apollo-server-express: ^3.10.0
   bcrypt: ^4.0.1
   express: ^4.17.1
+  faker: ^4.1.0
   graphql: ^16.5.0
   jsonwebtoken: ^8.5.1
   mongoose: ^5.9.9
@@ -13,6 +14,7 @@ dependencies:
   apollo-server-express: 3.10.0_g7snex6epo2tsaz6yhvyva23iq
   bcrypt: 4.0.1
   express: 4.18.1
+  faker: 4.1.0
   graphql: 16.5.0
   jsonwebtoken: 8.5.1
   mongoose: 5.13.14
@@ -55,7 +57,7 @@ packages:
     resolution: {integrity: sha512-nLgYLomqjVimEzQ4cdvVQkcryi970NDvcRVPfd0OPeXhBfda38WjBq+WhQFk+czSHrmrSp34YHBxpat0EtiowA==}
     dependencies:
       '@apollo/utils.logger': 1.0.0
-      lru-cache: 7.13.1
+      lru-cache: 7.13.2
     dev: false
 
   /@apollo/utils.logger/1.0.0:
@@ -762,6 +764,10 @@ packages:
       - supports-color
     dev: false
 
+  /faker/4.1.0:
+    resolution: {integrity: sha512-ILKg69P6y/D8/wSmDXw35Ly0re8QzQ8pMfBCflsGiZG2ZjMUNLYNexA6lz5pkmJlepVdsiDFUxYAzPQ9/+iGLA==}
+    dev: false
+
   /fast-json-stable-stringify/2.1.0:
     resolution: {integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==}
     dev: false
@@ -1061,8 +1067,8 @@ packages:
       yallist: 4.0.0
     dev: false
 
-  /lru-cache/7.13.1:
-    resolution: {integrity: sha512-CHqbAq7NFlW3RSnoWXLJBxCWaZVBrfa9UEHId2M3AW8iEBurbqduNexEUCGc3SHc6iCYXNJCDi903LajSVAEPQ==}
+  /lru-cache/7.13.2:
+    resolution: {integrity: sha512-VJL3nIpA79TodY/ctmZEfhASgqekbT574/c4j3jn4bKXbSCnTTCH/KltZyvL2GlV+tGSMtsWyem8DCX7qKTMBA==}
     engines: {node: '>=12'}
     dev: false
 
