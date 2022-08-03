@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 const secret = 'gymbuddy';
-const expiration = '2h';x
+const expiration = '2h';
 
 module.exports = {
   signToken: function({ username, email, _id }) {
