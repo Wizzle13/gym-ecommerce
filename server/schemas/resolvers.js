@@ -24,14 +24,7 @@ const resolvers = {
           return User.findOne({ username })
             .select('-__v -password')
             
-        },
-        thoughts: async (parent, { username }) => {
-          const params = username ? { username } : {};
-          return Thought.find(params).sort({ createdAt: -1 });
-        },
-        thought: async (parent, { _id }) => {
-          return Thought.findOne({ _id });
-        }    
+        }
       },
       Mutation: {
         addUser: async (parent, args) => {
