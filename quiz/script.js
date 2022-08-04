@@ -64,7 +64,7 @@ var myQuestions = [
         answers: [
             "Female",
             "Male",
-            "Other"
+            "No Preference"
         ]
     },
 ]
@@ -92,7 +92,7 @@ function buildQuiz() {
 
 function answerCheck() {
     answerArray.push(this.innerText)
-    
+
 
     i++
 
@@ -101,86 +101,40 @@ function answerCheck() {
     } else {
         buildQuiz()
     }
-
-    // if (this.innerText === myQuestions[i].correctAnswer) {
-    //     //if answer is correct
-    //     console.log('correct!')
-    //     //increment the index
-    //     i++
-    //     console.log(`index is ${i}`)
-    //     console.log(`myQuestions length is ${myQuestions.length}`)
-    //     //if the quiz is over
-    //     if (myQuestions.length == i) {
-    //         //end the quiz
-    //         endGame()
-    //     } else {
-    //         //rebuild the quiz question
-    //         buildQuiz()
-    //     }
-    // } else {
-    //     console.log('false!')
-    //     //deduct time
-    //     time = time - 15
-
-    //     highlight()
-    // }
 }
 
 function endGame() {
     console.log(answerArray)
     quizContainer.setAttribute('class', 'hidden')
     trainerSelect.removeAttribute('class', 'hidden')
+    if (answerArray[1] == 'Strength Training') {
+        trainerSelect.innerHTML = `<div class="container"><div class="d-flex justify-content-center">
+        <img class="" src="./images/trainer0.jpg" alt="Emerald">
+        <p class="ml-2">Your Preferred Trainer is Emerald. An expert in strength training and high impact workouts<p>
+        <br>
+        </div>
+        </div>
+        <button class="btn">Go to Plan Selection</button>`
+    }else if (answerArray[1] == 'Endurance Training'){
+        trainerSelect.innerHTML = `<div class="container"><div class="d-flex justify-content-center">
+        <img class="" src="./images/trainer1.jpg" alt="Bill">
+        <p class="ml-2">Your Preferred Trainer is Bill. An expert in long distance and endurance training.<p>
+        <br>
+        </div>
+        </div>
+        <button class="btn">Go to Plan Selection</button>`
+    }else if (answerArray[1] == "Overall Wellness"){
+        trainerSelect.innerHTML = `<div class="container"><div class="d-flex justify-content-center">
+        <img class="" src="./images/trainer2.jpg" alt="Steven">
+        <p class="ml-2">Your Preferred Trainer is Steven. An expert in general health and wellness exercise<p>
+        <br>
+        
+        </div>
+        </div>
+        <button class="btn">Go to Plan Selection</button>`
+    }
 }
 
-// function highScore() {
-//     //hide quiz
-//     quizContainer.setAttribute('class', 'hidden')
-//     //reveal end of game screen
-//     scoreSaver.removeAttribute('class', 'hidden')
-//     //add HTML to id=currentScore to display time score
-//     currentScore.innerHTML = `Your score is ${time}`
-// }
-
-// function displayScores() {
-//   savedScores.textContent = displayedScoreArray
-// }
-
-// function printHighscores() {
-//     //pull from local
-//     var highScoresParse = JSON.parse(localStorage.getItem('highScores') || [])
-//     console.log("hs", JSON.stringify(highScoresParse))
-//     // var highScoresString = JSON.stringify(highScoresParse)
-
-//     for (let i = 0; i < highScoresParse.length; i++) {
-//         savedScores.innerHTML += `<p> ${highScoresParse[i].initials} scored ${highScoresParse[i].score} points </p>`;
-//     }
-// }
-
-// var initials = document.getElementById('initials')
-// var scoreArray = JSON.parse(window.localStorage.getItem("highScores")) || [];
-
-// initialsBtn.onclick = function scoreSave() {
-
-//     //compile user input and remaining time into one var
-//     var newScore = {
-//         'initials': initials.value,
-//         'score': time
-//     }
-
-//     //push to array
-//     scoreArray.push(newScore)
-
-//     //push array to local (see printHighScores() for pull)
-//     localStorage.setItem('highScores', JSON.stringify(scoreArray))
-
-//     //reload page on submit
-//     location.reload()
-
-// }
-
-// savedScores.textContent = JSON.parse(localStorage.getItem('highScores'))
-
-//when user clicks start, the timer starts and quiz is built
 btn.onclick = function hideStart() {
     startScreen.setAttribute("class", "hidden")
     subLine.setAttribute("class", "hidden")
