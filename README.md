@@ -5,6 +5,9 @@ gym e-commerce
 ![Last Commit](https://img.shields.io/github/last-commit/wizzle13/gym-ecommerce?style=plastic)
 
 
+![Open Pull Request](https://img.shields.io/github/issues-pr/wizzle13/gym-ecommerce?style=plastic)
+![Closed Pull Request](https://img.shields.io/github/issues-pr-closed/wizzle13/gym-ecommerce?style=plastic)
+
 * Cameron Cole
 
 * Chris Burton
