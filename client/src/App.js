@@ -1,10 +1,10 @@
 import React from 'react';
-import About from './homepage/About';
-import Contact from './homepage/contact';
-import Feature from './homepage/weoffer';
-import Header from './homepage/home';
-import Navbar from './homepage/Navbar';
-import Offer from './homepage/team';
+import About from './pages/About';
+import Contact from './pages/contact';
+import Feature from './pages/weoffer';
+import Header from './pages/home';
+import Navbar from './pages/Navbar';
+import Offer from './pages/team';
 function App() {
   return (
     <div className="App">
