@@ -11,6 +11,7 @@ import Navbar from './pages/Navbar';
 import Offer from './pages/team';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Profile from './pages/Profile';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -66,9 +67,13 @@ function App() {
                 path="/login"
                 element={<Login />}
               />
-               <Route 
+              <Route 
                 path="/signup"
                 element={<Signup />}
+              />
+              <Route 
+                path="/profile"
+                element={<Profile />}
               />
 
             </Routes>

@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
 import logo from '../images/gymlogo.png';
 import {Link} from 'react-router-dom';
+import Auth from '../utils/auth';
+
 export default function Navbar() {
     const[nav,setnav] = useState(false);
     const changeBackground =() =>{
@@ -11,7 +13,12 @@ export default function Navbar() {
             setnav(false);
         }
     }
+    
     window.addEventListener('scroll',changeBackground);
+    const logout = event => {
+        event.preventDefault();
+        Auth.logout();
+    };
 
     return (
         <nav className={nav ?"nav active":"nav"}>
@@ -28,8 +35,17 @@ export default function Navbar() {
                   <li><Link to="team">Team</Link></li>
                   <li><Link to="about">About</Link></li>
                   <li><Link to="contact">Contact Us</Link></li>
-                  <li><Link to="Login">Sign In </Link></li>
-
+                  {Auth.loggedIn() ? (
+                    <>  
+                        <li><Link to="/" onClick={logout}>Logout </Link></li>
+                        <li><Link to="/profile" >Profile </Link></li>
+                    </>
+                    ) : (
+                    <>
+                        
+                        <li><Link to="Login">Sign In </Link></li>
+                    </>
+                    )}
               </ul>
 
         </nav>
