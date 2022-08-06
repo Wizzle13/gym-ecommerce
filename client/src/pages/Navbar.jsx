@@ -15,20 +15,20 @@ export default function Navbar() {
 
     return (
         <nav className={nav ?"nav active":"nav"}>
-            <Link to='/' smooth={true} duration={1000} className ='logo'>
+            <Link to='/'className ='logo'>
                 <img src={logo} alt=""/>
             </Link>
             <input className='menu-btn' type='checkbox' id='menu-btn' />
-              <label className='menu-icon' for='menu-btn'>
+              <label className='menu-icon' htmlFor='menu-btn'>
                   <span className='nav-icon'></span>
               </label>
               <ul className="menu">
-                  <li><Link to="/" smooth={true} duration={1000}>Home</Link></li>
-                  <li><Link to="weoffer" smooth={true} duration={1000}>What we Offer</Link></li>
-                  <li><Link to="team" smooth={true} duration={1000}>Team</Link></li>
-                  <li><Link to="about" smooth={true} duration={1000}>About</Link></li>
-                  <li><Link to="contact" smooth={true} duration={1000}>Contact Us</Link></li>
-                  <li><Link to="Login" smooth={true} duration={1000}>Sign In </Link></li>
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="weoffer">What we Offer</Link></li>
+                  <li><Link to="team">Team</Link></li>
+                  <li><Link to="about">About</Link></li>
+                  <li><Link to="contact">Contact Us</Link></li>
+                  <li><Link to="Login">Sign In </Link></li>
 
               </ul>
 

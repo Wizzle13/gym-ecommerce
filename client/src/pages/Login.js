@@ -5,7 +5,7 @@ import Auth from '../utils/auth';
 
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: '', password: '' });
-  // const [login, { error }] = useMutation(LOGIN_USER);
+  const [login, { error }] = useMutation(LOGIN_USER);
 
   // update state based on form input changes
   const handleChange = (event) => {
@@ -21,15 +21,15 @@ const Login = (props) => {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
-  //   try {
-  //     const { data } = await login({
-  //       variables: { ...formState }
-  //     });
-  //     Auth.login(data.login.token);
-  //     console.log(data);
-  //   } catch (e) {
-  //     console.error(e);
-  //   }
+    try {
+      const { data } = await login({
+        variables: { ...formState }
+      });
+      Auth.login(data.login.token);
+      console.log(data);
+    } catch (e) {
+      console.error(e);
+    }
 
     // clear form values
     setFormState({
@@ -44,16 +44,16 @@ const Login = (props) => {
         <div className='card' id='contact'>
           <h1 className='card-header'>Login</h1>
           <div className='card-body'>
-            {/* <form onSubmit={handleFormSubmit}> */}
-            <form>
+            <form onSubmit={handleFormSubmit}>
+            
               <input
                 className='form-input'
                 placeholder='Your email'
                 name='email'
                 type='email'
                 id='email'
-                // value={formState.email}
-                // onChange={handleChange}
+                value={formState.email}
+                onChange={handleChange}
               />
               <input
                 className='form-input'
@@ -61,14 +61,14 @@ const Login = (props) => {
                 name='password'
                 type='password'
                 id='password'
-                // value={formState.password}
-                // onChange={handleChange}
+                value={formState.password}
+                onChange={handleChange}
               />
               <input type='submit' value='submit' />
                 
               
             </form>
-            {/* {error && <div>Login failed</div>} */}
+            {error && <div>Login failed</div>}
           </div>
         </div>
       </div>

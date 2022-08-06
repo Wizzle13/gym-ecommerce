@@ -5,7 +5,7 @@ import Auth from '../utils/auth';
 
 const Signup = () => {
   const [formState, setFormState] = useState({ username: '', email: '', password: '' });
-//   const [addUser, { error }] = useMutation(ADD_USER);
+  const [addUser, { error }] = useMutation(ADD_USER);
   // update state based on form input changes
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -22,16 +22,16 @@ const Signup = () => {
     event.preventDefault();
 
     // use try/catch instead of promises to handle errors
-//   try {
-//     // execute addUser mutation and pass in variable data from form
-//     const { data } = await addUser({
-//       variables: { ...formState }
-//     });
-//     Auth.login(data.addUser.token);
-//     console.log(data);
-//   } catch (e) {
-//     console.error(e);
-//   }
+  try {
+    // execute addUser mutation and pass in variable data from form
+    const { data } = await addUser({
+      variables: { ...formState }
+    });
+    Auth.login(data.addUser.token);
+    console.log(data);
+  } catch (e) {
+    console.error(e);
+  }
 
   };
 
@@ -48,8 +48,8 @@ const Signup = () => {
                 name='username'
                 type='username'
                 id='username'
-                // value={formState.username}
-                // onChange={handleChange}
+                value={formState.username}
+                onChange={handleChange}
               />
               <input
                 className='form-input'
@@ -57,8 +57,8 @@ const Signup = () => {
                 name='email'
                 type='email'
                 id='email'
-                // value={formState.email}
-                // onChange={handleChange}
+                value={formState.email}
+                onChange={handleChange}
               />
               <input
                 className='form-input'
@@ -66,13 +66,13 @@ const Signup = () => {
                 name='password'
                 type='password'
                 id='password'
-                // value={formState.password}
-                // onChange={handleChange}
+                value={formState.password}
+                onChange={handleChange}
               />
               <input type='submit' value='submit' />
                
             </form>
-            {/* {error && <div>Sign up failed</div>} */}
+            {error && <div>Sign up failed</div>}
           </div>
         </div>
       </div>
