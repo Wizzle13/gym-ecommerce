@@ -11,7 +11,14 @@ const trainerSchema = new Schema(
             enum: ['Endurance', 'Strength', 'Overall Health'],
             default: 'Overall Health'
         }
+    },
+    {
+        toJSON: {
+            virtuals: true
+        }
     }
 )
+
+const Trainer = model('Trainer', trainerSchema);
 
 module.exports = Trainer;

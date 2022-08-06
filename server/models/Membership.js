@@ -11,7 +11,14 @@ const membershipSchema = new Schema(
             enum: ['Standard', 'Plus', 'Unlimited'],
             default: 'Standard'
         }
+    },
+    {
+        toJSON: {
+            virtuals: true
+        }
     }
 )
+
+const Membership = model('Membership', membershipSchema);
 
 module.exports = Membership;
