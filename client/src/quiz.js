@@ -6,7 +6,7 @@ const subLine = document.getElementById("subLine")
 const quizContainer = document.getElementById('quizContainer')
 const trainerSelect = document.getElementById('trainerSelect')
 //When the game ends, this div presents the time score
-const currentScore = document.getElementById('currentScore')
+// const currentScore = document.getElementById('currentScore')
 //variable to track question index
 var i = 0
 var answerArray = []
@@ -96,7 +96,7 @@ function answerCheck() {
 
     i++
 
-    if (myQuestions.length == i) {
+    if (myQuestions.length === i) {
         endGame()
     } else {
         buildQuiz()
@@ -107,7 +107,7 @@ function endGame() {
     console.log(answerArray)
     quizContainer.setAttribute('class', 'hidden')
     trainerSelect.removeAttribute('class', 'hidden')
-    if (answerArray[1] == 'Strength Training') {
+    if (answerArray[1] === 'Strength Training') {
         trainerSelect.innerHTML = `<div class="container"><div class="d-flex justify-content-center">
         <img class="" src="./images/trainer0.jpg" alt="Emerald">
         <p class="ml-2">Your Preferred Trainer is Emerald. An expert in strength training and high impact workouts<p>
@@ -115,7 +115,7 @@ function endGame() {
         </div>
         </div>
         <button class="btn">Go to Plan Selection</button>`
-    }else if (answerArray[1] == 'Endurance Training'){
+    }else if (answerArray[1] === 'Endurance Training'){
         trainerSelect.innerHTML = `<div class="container"><div class="d-flex justify-content-center">
         <img class="" src="./images/trainer1.jpg" alt="Bill">
         <p class="ml-2">Your Preferred Trainer is Bill. An expert in long distance and endurance training.<p>
@@ -123,7 +123,7 @@ function endGame() {
         </div>
         </div>
         <button class="btn">Go to Plan Selection</button>`
-    }else if (answerArray[1] == "Overall Wellness"){
+    }else if (answerArray[1] === "Overall Wellness"){
         trainerSelect.innerHTML = `<div class="container"><div class="d-flex justify-content-center">
         <img class="" src="./images/trainer2.jpg" alt="Steven">
         <p class="ml-2">Your Preferred Trainer is Steven. An expert in general health and wellness exercise<p>

@@ -12,6 +12,7 @@ import Offer from './pages/team';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Profile from './pages/Profile';
+import Quiz from './pages/Quiz'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -74,6 +75,10 @@ function App() {
               <Route 
                 path="/profile"
                 element={<Profile />}
+              />
+              <Route 
+                path="/quiz"
+                element={<Quiz />}
               />
 
             </Routes>
