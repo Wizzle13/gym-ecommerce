@@ -5,15 +5,47 @@ import Feature from './pages/weoffer';
 import Header from './pages/home';
 import Navbar from './pages/Navbar';
 import Offer from './pages/team';
+import Login from './pages/Login';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Header />
-      <Feature />
-      <Offer />
-      <About />
-      <Contact />
+      <Router>
+        <div>
+          <Navbar />  
+          <div>
+            <Routes>
+              <Route 
+                path="/"
+                element={<Header />}
+              />
+              <Route 
+                path="/weoffer"
+                element={<Feature />}
+              />
+              <Route 
+                path="/team"
+                element={<Offer />}
+              />
+              <Route 
+                path="/about"
+                element={<About />}
+              />
+              <Route 
+                path="/contact"
+                element={<Contact />}
+              />
+              <Route 
+                path="/login"
+                element={<Login />}
+              />
+
+            </Routes>
+          </div>
+        </div>
+      </Router>
     
     </div>
   );
