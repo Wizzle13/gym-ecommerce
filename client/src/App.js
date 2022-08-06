@@ -6,6 +6,7 @@ import Header from './pages/home';
 import Navbar from './pages/Navbar';
 import Offer from './pages/team';
 import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -40,6 +41,10 @@ function App() {
               <Route 
                 path="/login"
                 element={<Login />}
+              />
+               <Route 
+                path="/signup"
+                element={<Signup />}
               />
 
             </Routes>

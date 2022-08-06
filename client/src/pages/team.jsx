@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 
+
 function Offer() {
     return (
         <div id='presentaion'>
