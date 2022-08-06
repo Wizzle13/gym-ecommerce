@@ -1,3 +1,6 @@
 const User = require('./User');
 
-module.exports = { User };
+const Trainer = require('./Trainer');
+const Membership = require('./Membership');
+
+module.exports = { User, Trainer, Membership };
