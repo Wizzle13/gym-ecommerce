@@ -53,7 +53,7 @@ We are alway looking for assistance making ground breaking websites.
   ## Links
   GitHub Repository: https://github.com/wizzle13/gym-ecommerce
 
-  GitHub URL: https://wizzle13.github.io/gym-ecommerce
+  Heroku URL: https://gym--buddy.herokuapp.com/
 
 
 ![Made With](https://img.shields.io/badge/Made%20with-Ultimate%20README%20Generator-blue?style=plastic)
