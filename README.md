@@ -26,7 +26,8 @@
 ![ExpressJS](https://img.shields.io/badge/Express.js-404D59?style=plastic&logo=express&logoColor=white)
 ![Apollo GraphQL](https://img.shields.io/badge/Apollo_Graph_QL-311C87?style=plastic&logo=apollographql&logoColor=white)
 ![GraphQL](https://img.shields.io/badge/Graph_QL-E10098?style=plastic&logo=graphql&logoColor=white)
-
+![JSON Web Tokens](https://img.shields.io/badge/JSON_Web_Tokens-000000?style=plastic&logo=JSONWebTokens&logoColor=white)
+![Nodemon](https://img.shields.io/badge/Nodemon-76D04B?style=plastic&logo=Nodemon&logoColor=white)
 
   ##### Database:
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=plastic&logo=mongodb&logoColor=white)
