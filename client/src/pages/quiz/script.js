@@ -135,7 +135,7 @@ function endGame() {
     }
 }
 
-btn.onclick = function hideStart() {
+function hideStart() {
     startScreen.setAttribute("class", "hidden")
     subLine.setAttribute("class", "hidden")
     quizContainer.removeAttribute('class', 'hidden')
