@@ -114,8 +114,8 @@ function answerCheck() {
 
 function endGame() {
     console.log(answerArray)
-    quizContainer.setAttribute('className', 'hidden')
-    trainerSelect.removeAttribute('className', 'hidden')
+    quizContainer.setAttribute('className', 'hidden');
+    trainerSelect.removeAttribute('className', 'hidden');
     if (answerArray[1] === 'Strength Training') {
         trainerSelect.innerHTML = `<div className="container"><div className="d-flex justify-content-center">
         <img className="" src={trainer0} alt="Emerald">
@@ -145,9 +145,9 @@ function endGame() {
 }
 
 function hideStart() {
-    startScreen.setAttribute("className", "hidden")
-    subLine.setAttribute("className", "hidden")
-    quizContainer.removeAttribute('className', 'hidden')
+    startScreen.setAttribute('className', 'hidden');
+    subLine.setAttribute('className', 'hidden');
+    quizContainer.removeAttribute('className', 'hidden');
 
     buildQuiz()
 }
@@ -162,19 +162,19 @@ function hideStart() {
 
                 <h1 className="display-3 text-center text-white">Workout Personality Quiz</h1>
 
-                <p id="subLine" className="text-center text-white"> Answer the Questions and Match with your Personal Trainer</p>
+                <p id='subLine' className='text-center text-white'> Answer the Questions and Match with your Personal Trainer</p>
 
                 <div className="bg-white my-4 p-4 rounded">
                     
                    
-                    <div id="startScreen">
+                    <div id='startScreen' className=''>
                         
-                        <button id="btn" className="btn-block btn-warning header-btn" onClick={hideStart}>Start</button>
+                        <button id='btn' className='btn-block btn-warning header-btn' onClick={hideStart}>Start</button>
                     </div>
 
-                    <div id="quizContainer" className="hidden"></div>
+                    <div id='quizContainer' className='hidden'></div>
 
-                    <div id="trainerSelect" className="hidden container">
+                    <div id='trainerSelect' className='hidden container'>
                         
                     </div>
                     
