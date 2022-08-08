@@ -1,3 +1,4 @@
+
 const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
 const { User } = require('../models');
@@ -9,8 +10,8 @@ const resolvers = {
             if (context.user) {
                 const userData = await User.findOne({ _id: context.user._id })
                     .select('-__v -password')
-                    .populate('thoughts')
-                    .populate('friends');
+                    .populate('membership')
+                    
             
                 return userData;
             }
@@ -62,3 +63,4 @@ const resolvers = {
 }
 
 module.exports = resolvers;
+
