@@ -3,38 +3,44 @@ import React from 'react';
 
 function Quiz() {
     return (
-        <div class="min-vh-100 d-flex align-items-center bg-dark">
+        <div>
 
-            <div class="w-100 row justify-content-center">
+            <div className="min-vh-100 d-flex align-items-center bg-dark">
 
-                <div class="col-10 col-md-6 col-lg-5">
+                <section className="w-100 row justify-content-center">
 
-                    <h1 class="display-3 text-center text-white">Workout Personality Quiz</h1>
+                    <div className="col-10 col-md-6 col-lg-5">
 
-                    <p id="subLine" class="text-center text-white"> Answer the Questions and Match with your Personal Trainer</p>
+                        <h1 className="display-3 text-center text-white">Workout Personality Quiz</h1>
 
-                    <div class="bg-white my-4 p-4 rounded">
-                        
-                    
-                        <div id="startScreen">
-                            
-                            <button id="btn" class="btn-block btn-warning">Start</button>
+                        <p id="subLine" className="text-center text-white"> Answer the Questions and Match with your Personal Trainer</p>
+
+                        <div className="bg-white my-4 p-4 rounded">
+
+
+                            <div id="startScreen">
+
+                                <button id="btn" className="btn-block btn-warning">Start</button>
+                            </div>
+
+                            <div id="quizContainer" className="hidden"></div>
+
+                            <div id="trainerSelect" className="hidden container">
+
+                            </div>
+
                         </div>
-
-                        <div id="quizContainer" class="hidden"></div>
-
-                        <div id="trainerSelect" class="hidden container">
-                            
-                        </div>
-                        
                     </div>
-                </div>
+
+                </section>
 
             </div>
-            {/* <script src="../../quiz.js"></script> */}
+
+            <script src="../utils/quizScript.js"></script>
         </div>
 
-        
+
+
     )
 }
 export default Quiz
