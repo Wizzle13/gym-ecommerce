@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const fitnessProgramSchema = require('./FitnessProgram');
 
 const trainerSchema = new Schema(
     {
@@ -6,11 +7,13 @@ const trainerSchema = new Schema(
             type: String,
             required: true
         },
-        workoutPackage: {
-            type: String,
-            enum: ['Endurance', 'Strength', 'Overall Health'],
-            default: 'Overall Health'
-        }
+        fitness: [
+            {
+                endidRef: { type: Schema.Types.ObjectId, ref: "endurance" },
+                stridRef: { type: Schema.Types.ObjectId, ref: "strength" },
+                overfitidRef: { type: Schema.Types.ObjectId, ref: "overallHealth" }
+            }
+        ]
     },
     {
         toJSON: {
@@ -18,6 +21,7 @@ const trainerSchema = new Schema(
         }
     }
 )
+
 
 const Trainer = model('Trainer', trainerSchema);
 

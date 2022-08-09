@@ -8,7 +8,24 @@ const typeDefs = gql`
         id: ID
         username: String
         email: String
+        trainer: String
         membership: String
+    }
+
+    type Trainer {
+        trainerName: String
+        fitness: []
+    }
+
+    type Membership {
+        membershipName: String
+        membershipType: []
+    }
+
+    enum FitnessProgram {
+        Endurance
+        Strength
+        OverallHealth
     }
 
     type Query {
