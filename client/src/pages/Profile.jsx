@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import { Navigate, useParams } from 'react-router-dom';
 import "../Profile.css";
@@ -50,22 +49,4 @@ const Card = () => {
   );
 };
 export default Card;
-=======
-import React from 'react';
 
-
-function Profile() {
-    return (
-        <div id='about'>
-            <div className='about-image'>
-                
-                <h1>Profile Page</h1>
-            </div>
-            
-            
-        </div>
-    )
-}
-
-export default Profile
->>>>>>> feature/quiz-move
