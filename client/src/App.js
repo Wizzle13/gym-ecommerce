@@ -16,7 +16,6 @@ import Signup from './pages/Signup';
 import Profile from './pages/Profile';
 import Quiz from './pages/Quiz';
 
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const httpLink = createHttpLink({
