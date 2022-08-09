@@ -13,7 +13,6 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Profile from './pages/Profile';
 import Quiz from './pages/Quiz';
-import Trainer from './pages/trainerPick';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -81,10 +80,7 @@ function App() {
                 path="/quiz"
                 element={<Quiz />}
               />
-              <Route 
-                path="/trainer"
-                element={<Trainer />}
-              />
+              
 
             </Routes>
           </div>
