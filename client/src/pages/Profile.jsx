@@ -14,9 +14,9 @@ const Card = () => {
 
   const user = data?.me || data?.user || {}
   // navigate to personal profile page if username is the logged-in user's
-  if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
-    return <Navigate to="/profile" />;
-  }
+//   if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
+//     return <Navigate to="/profile" />;
+//   }
 
   if (loading) {
     return <div>Loading...</div>;
@@ -40,7 +40,7 @@ const Card = () => {
         <img src="./gymlogo.png" alt="John" style={{ width: "100%" }} />
         <h1 id="NameOfuser">{user.username}</h1>
         <p className="trainer">Personal Trainer</p>
-        <p id="NameOftrainer">Trainers name</p>
+        <p id="NameOftrainer"></p>
         <p className="membership">Membership Plan</p>
         <p id="MemberShipPlan">Membershipplan</p>
         
