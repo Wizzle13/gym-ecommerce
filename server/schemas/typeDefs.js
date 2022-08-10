@@ -12,22 +12,6 @@ const typeDefs = gql`
         membership: String
     }
 
-    type Trainer {
-        trainerName: String
-        fitness: []
-    }
-
-    type Membership {
-        membershipName: String
-        membershipType: []
-    }
-
-    enum FitnessProgram {
-        Endurance
-        Strength
-        OverallHealth
-    }
-
     type Query {
         me: User
         users: [User]

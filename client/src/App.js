@@ -12,9 +12,12 @@ import Navbar from './pages/Navbar';
 import Offer from './pages/team';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Trainer from './pages/trainerPick';
+
 import Profile from './pages/Profile';
 import Quiz from './pages/Quiz';
 import Emerald from './pages/emerald';
+
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -77,16 +80,25 @@ function App() {
               <Route 
                 path="/profile"
                 element={<Profile />}
+
               />
               <Route 
                 path="/quiz"
                 element={<Quiz />}
               />
               <Route 
+
                 path="/emerald"
                 element={<Emerald />}
               />
               
+
+                path="/trainer"
+                element={<Trainer />}
+
+              />
+
+
 
             </Routes>
           </div>
