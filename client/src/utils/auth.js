@@ -45,7 +45,7 @@ class AuthService {
   signup(idToken) {
     // Saves user token to localStorage
     localStorage.setItem('id_token', idToken);
-    window.location.assign('/trainer');
+    window.location.assign('/weoffer');
   }
 
   // clear token from localStorage and force logout with reload

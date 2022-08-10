@@ -9,7 +9,7 @@ function Offer() {
                 <h1> This <span>is</span> our team</h1>
                 <p className='details'>We will be happy to assist you</p>
                 <div className='pr-btns'>
-                    <Link to="Signup" className='pr-btn'>Come Join Us</Link>
+                <Link to="Signup" className='header-btn'>JOIN US</Link>
                 </div>
             </div>
         </div>
