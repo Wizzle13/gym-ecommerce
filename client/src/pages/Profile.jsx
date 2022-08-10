@@ -37,7 +37,7 @@ const Card = () => {
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       />
       <div className="card">
-        <img src="./gymlogo.png" alt="John" style={{ width: "100%" }} />
+        <img src="./gymlogo.png" alt="gymlogo" style={{ width: "100%" }} />
         <h1 id="NameOfuser">Name</h1>
         <p className="trainer">Personal Trainer</p>
         <p id="NameOftrainer">Emerald</p>
