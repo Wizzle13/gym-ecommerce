@@ -11,7 +11,7 @@ import Navbar from './pages/Navbar';
 import Offer from './pages/team';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-
+import Trainer from './pages/trainerPick';
 
 import Profile from './pages/Profile';
 import Quiz from './pages/Quiz';
@@ -83,6 +83,11 @@ function App() {
               <Route 
                 path="/quiz"
                 element={<Quiz />}
+              />
+              <Route 
+                path="/trainer"
+                element={<Trainer />}
+
               />
 
 
