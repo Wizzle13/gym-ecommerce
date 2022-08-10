@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 function Featurebox(props) {
     return (
@@ -8,9 +9,8 @@ function Featurebox(props) {
             </div>
             <div className='a-b-text'>
                 <h2>{props.title}</h2>
-                <p>We are experts</p>
+                <p><Link to="../emerald" className='pr-btn'>Meet the Expert</Link></p>
             </div>
-            
         </div>
     )
 }

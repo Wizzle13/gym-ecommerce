@@ -1,4 +1,5 @@
 import React from 'react';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
@@ -15,6 +16,7 @@ import Trainer from './pages/trainerPick';
 
 import Profile from './pages/Profile';
 import Quiz from './pages/Quiz';
+import Emerald from './pages/emerald';
 
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -85,10 +87,17 @@ function App() {
                 element={<Quiz />}
               />
               <Route 
+
+                path="/emerald"
+                element={<Emerald />}
+              />
+              
+
                 path="/trainer"
                 element={<Trainer />}
 
               />
+
 
 
             </Routes>
