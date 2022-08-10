@@ -92,7 +92,7 @@ function App() {
                 element={<Emerald />}
               />
               
-
+              <Route
                 path="/trainer"
                 element={<Trainer />}
 
