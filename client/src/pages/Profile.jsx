@@ -38,11 +38,11 @@ const Card = () => {
       />
       <div className="card">
         <img src="./gymlogo.png" alt="John" style={{ width: "100%" }} />
-        <h1 id="NameOfuser">{data.username}</h1>
+        <h1 id="NameOfuser">Name</h1>
         <p className="trainer">Personal Trainer</p>
-        <p id="NameOftrainer"></p>
+        <p id="NameOftrainer">Emerald</p>
         <p className="membership">Membership Plan</p>
-        <p id="MemberShipPlan">Membershipplan</p>
+        <p id="MemberShipPlan">Cardio</p>
         
       </div>
     </div>

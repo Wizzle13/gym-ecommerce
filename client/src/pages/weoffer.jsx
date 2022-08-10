@@ -4,6 +4,7 @@ import figure1 from '../images/gym1.svg';
 import figure2 from '../images/gym2.svg';
 import figure3 from '../images/yoga2.svg';
 import figure4 from '../images/cardio1.svg';
+// import { Link } from 'react-router-dom';
 function Feature() {
     return (
         <div id='features'>
