@@ -38,7 +38,7 @@ const Card = () => {
       />
       <div className="card">
         <img src="./gymlogo.png" alt="John" style={{ width: "100%" }} />
-        <h1 id="NameOfuser">{user.username}</h1>
+        <h1 id="NameOfuser">{data.username}</h1>
         <p className="trainer">Personal Trainer</p>
         <p id="NameOftrainer"></p>
         <p className="membership">Membership Plan</p>

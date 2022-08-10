@@ -9,6 +9,7 @@ const typeDefs = gql`
         email: String
         membership: String
     }
+
     type Query {
         me: User
         users: [User]
