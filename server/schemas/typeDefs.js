@@ -12,7 +12,6 @@ const typeDefs = gql`
         membership: String
     }
 
-       
     type Query {
         me: User
         users: [User]

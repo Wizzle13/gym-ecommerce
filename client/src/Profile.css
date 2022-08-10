@@ -1,0 +1,15 @@
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(15, 211, 153, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .trainer, .membership {
+    color: rgb(16, 22, 196);
+    font-size: 18px;
+  }
+  
+ 
+  
